@@ -13,13 +13,13 @@ def main():
     inputs = [0.7, 0.1]
 
     # weights = [
-    #   [Thirsty-Refregirator, Hungry-Refregerator],
+    #   [Thirsty-Refrigerator, Hungry-Refrigerator],
     #   [Thirsty-Cookie, Hungry-Cookie]
     # ]
     weights = [[0.9, 0.1], [0.1, 0.9]]
 
     output_threshold = [0.5, 0.5]
-    output_decision = np.array(["Go To Refregirator", "Go To Cookie Jar"])
+    output_decision = np.array(["Go To Refrigerator", "Go To Cookie Jar"])
 
     # Calculations
     output = np.dot(inputs, weights)

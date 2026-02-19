@@ -14,7 +14,7 @@ from ollama import chat
 
 response = chat(
     model='smollm2',
-    messages=[{'role': 'user', 'content': 'Hello!'}],
+    messages=[{'role': 'user', 'content': 'What are the specialty foods of Malaysia?'}],
 )
 
 print(response.message.content)

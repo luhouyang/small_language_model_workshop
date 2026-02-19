@@ -4,3 +4,4 @@ slm
 .vscode
 __pycache__
 *.pth
+*.png

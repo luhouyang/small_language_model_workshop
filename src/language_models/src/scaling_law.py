@@ -35,7 +35,7 @@ def calculate_metrics(model, loader, device):
 def run_experiment():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    dataset_sizes = [1000, 5000, 10000, 50000]
+    dataset_sizes = [1000, 5000, 10000, 20000]
     model_widths = [8, 16, 32, 64]
     model_depths = [1, 2, 3]  
     val_size = 10000
@@ -116,7 +116,7 @@ def run_experiment():
 
     # --- Updated Final Comparison Plot: Accuracy, IoU, and Loss ---
     comparison_width = 64
-    target_n_index = dataset_sizes.index(50000)
+    target_n_index = dataset_sizes.index(20000)
     
     depth_labels = [f"Depth {d}" for d in model_depths]
     comp_acc = [results[(d, comparison_width)]["acc"][target_n_index] for d in model_depths]
@@ -124,7 +124,7 @@ def run_experiment():
     comp_loss = [results[(d, comparison_width)]["best_loss"][target_n_index] for d in model_depths]
 
     fig, ax = plt.subplots(1, 3, figsize=(18, 5))
-    fig.suptitle(f'Depth Comparison (Width: {comparison_width}, N: 50000)', fontsize=14)
+    fig.suptitle(f'Depth Comparison (Width: {comparison_width}, N: 20000)', fontsize=14)
 
     # Accuracy Bar
     ax[0].bar(depth_labels, comp_acc, color='skyblue')

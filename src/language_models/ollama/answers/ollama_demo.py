@@ -65,7 +65,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         session_context.append({'role': 'assistant', 'content': ai_text})
 
         if len(session_context) > 20:
-            session_context.pop(0)
+            session_context.pop(1)
 
         await update.message.reply_text(ai_text)
     else:

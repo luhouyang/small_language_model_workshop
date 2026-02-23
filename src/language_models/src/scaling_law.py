@@ -1,3 +1,4 @@
+#%%
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -114,7 +115,7 @@ def run_experiment():
         plt.savefig(f"scaling_results_depth_{depth}.png")
         plt.close()
 
-    # --- Updated Final Comparison Plot: Accuracy, IoU, and Loss ---
+    # Updated Final Comparison Plot: Accuracy, IoU, and Loss
     comparison_width = 64
     target_n_index = dataset_sizes.index(20000)
     

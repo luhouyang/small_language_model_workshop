@@ -2,7 +2,7 @@
 
 Starting from the history of computing and artificial intelligence, the workshop discusses topics important to understanding and integrating AI in projects.
 
-## [SLIDES]()
+## [SLIDES HERE](https://docs.google.com/presentation/d/1OgaQ05GcTh5S7wXoLmUbdBvsvj7V8fZ1xXykShq3B4Q/edit?usp=sharing)
 
 ## INDEX
 
